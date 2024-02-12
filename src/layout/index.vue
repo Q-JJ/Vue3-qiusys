@@ -4,7 +4,7 @@
  * @Author: JnannJ
  * @Date: 2024-02-08 11:58:55
  * @LastEditors: JnannJ
- * @LastEditTime: 2024-02-12 17:48:37
+ * @LastEditTime: 2024-02-12 20:23:18
 -->
 <template>
   <div class="container">
@@ -28,6 +28,7 @@
 
     <!-- 功能区 -->
     <div class="main" :class="{ fold: SidebarStore.collapse }">
+      <Breadcrumb/>
       <router-view v-slot="{ Component }">
         <transition name="fade">
           <keep-alive>
@@ -43,6 +44,7 @@
 import Sidebar from './sidebar/index.vue'
 import Header from './header/index.vue'
 import useSidebarStore from '@/store/modules/sidebar'
+import Breadcrumb from './breadcrumb/index.vue'
 import { reactive } from 'vue'
 
 let SidebarStore = useSidebarStore()
@@ -92,7 +94,7 @@ let setting = reactive({
     position: absolute;
     top: $base-tabbar-height;
     left: $base-menu-width;
-    padding: 20px;
+    padding:10px 20px 20px 20px;
     overflow: auto;
     transition: all 0.3s;
     &.fold {
@@ -123,7 +125,7 @@ let setting = reactive({
 }
 
 .fade-enter-active {
-  transition: all 0.3s;
+  transition: all 0.3s ;
 }
 
 .fade-enter-to {

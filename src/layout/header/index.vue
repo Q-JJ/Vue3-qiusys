@@ -4,7 +4,7 @@
  * @Author: JnannJ
  * @Date: 2024-02-08 17:22:57
  * @LastEditors: JnannJ
- * @LastEditTime: 2024-02-12 17:45:02
+ * @LastEditTime: 2024-02-12 20:28:04
 -->
 <!--
  * @Descripttion: 
@@ -28,7 +28,6 @@
       <el-icon style="margin-right: 10px" @click="chageCollapse">
         <component :is="SidebarStore.collapse ? 'Fold' : 'Expand'"></component>
       </el-icon>
-      <Breadcrumb />
     </div>
     <div class="right">
       <Setting />
@@ -38,7 +37,6 @@
 
 <script setup lang="ts" name="header">
 import useSidebarStore from '@/store/modules/sidebar'
-import Breadcrumb from '../breadcrumb/index.vue'
 import Setting from './setting/index.vue'
 
 let SidebarStore = useSidebarStore()
