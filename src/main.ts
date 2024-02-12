@@ -4,7 +4,7 @@
  * @Author: JnannJ
  * @Date: 2024-02-06 11:35:02
  * @LastEditors: JnannJ
- * @LastEditTime: 2024-02-07 00:05:16
+ * @LastEditTime: 2024-02-12 13:20:59
  */
 /*
  * @Descripttion:
@@ -29,7 +29,7 @@ import gloablComponent from './components/index'
 
 import router from './router'
 import pinia from './store'
-
+import './permisstion'
 
 const app = createApp(App)
 
@@ -38,6 +38,8 @@ app.use(ElementPlus, {
   locale: zhCn,
 })
 // element icon
+// 注册elementplus图标 https://element-plus.org/zh-CN/component/icon.html#%E6%B3%A8%E5%86%8C%E6%89%80%E6%9C%89%E5%9B%BE%E6%A0%87
+// 使用 el-icon 为 SVG 图标提供属性或者直接使用svg
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component)
 }

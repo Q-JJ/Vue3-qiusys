@@ -4,7 +4,7 @@
  * @Author: JnannJ
  * @Date: 2024-02-06 16:58:16
  * @LastEditors: JnannJ
- * @LastEditTime: 2024-02-06 17:02:35
+ * @LastEditTime: 2024-02-11 15:48:11
  */
 //统一管理咱们项目用户相关的接口
 import request from '@/utils/request'
@@ -16,7 +16,7 @@ import type {
 //项目用户相关的请求地址
 enum API {
   LOGIN_URL = '/user/login',
-  USERINFO_URL = '/user/login',
+  USERINFO_URL = '/user/info',
 }
 
 //登录接口

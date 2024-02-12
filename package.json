@@ -20,7 +20,9 @@
     "axios": "^1.6.7",
     "element-plus": "^2.5.5",
     "lodash": "^4.17.21",
+    "nprogress": "^0.2.0",
     "pinia": "^2.1.7",
+    "vite-plugin-vue-setup-extend": "^0.4.0",
     "vue": "^3.3.11",
     "vue-router": "^4.2.5"
   },

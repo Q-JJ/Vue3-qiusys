@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: JnannJ
+ * @Date: 2024-02-06 16:26:53
+ * @LastEditors: JnannJ
+ * @LastEditTime: 2024-02-11 15:50:31
+ */
 //createUserList:次函数执行会返回一个数组,数组里面包含两个用户信息
 function createUserList() {
     return [
@@ -58,6 +66,7 @@ export default [
         response: (request) => {
             //获取请求头携带token
             const token = request.headers.token;
+            console.log(' eww:>> ', token);
             //查看用户信息是否包含有次token用户
             const checkUser = createUserList().find((item) => item.token === token)
             //没有返回失败的信息
